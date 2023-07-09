@@ -8,3 +8,6 @@ async fn find_all() -> Result<HttpResponse, CustomError> {
     OK(HttpResponse::OK().json(employees))
 }
 
+pub fn init_routes(config: &mut web::ServiceConfig) {
+    config.service(find_all());
+}
