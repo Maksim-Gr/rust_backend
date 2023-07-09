@@ -1,5 +1,6 @@
 mod error_handlers;
 mod employees;
+mod db;
 
 use std::env;
 use actix_web::{App, HttpServer};
