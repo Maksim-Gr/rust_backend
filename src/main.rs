@@ -1,4 +1,5 @@
 mod error_handlers;
+mod employees;
 
 use std::env;
 use actix_web::{App, HttpServer};
